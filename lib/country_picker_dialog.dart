@@ -98,7 +98,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                       labelText: widget.searchText,
                     ),
                 onChanged: (value) {
-                  final val = value.trim()
+                  final val = value.trim();
                   _filteredCountries = isNumeric(val)
                       ? widget.countryList
                           .where((country) => country.dialCode.contains(val))
